@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang ="hu">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Living Sport - Tollaslabda Csarnok</title>
+	<meta name="description" content="Ez itt a Living Sport. Gyere sportolj! ;)" />
+	<meta name="keywords"  content="Living,Sport,LivingSport" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="icon" href="Assets/Images/Living-Sport-Logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="Assets/Style/style.css" />
+  <link rel="stylesheet" type="text/css" href="nav.css" />
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<style>
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.section{
+		text-align:center;
+	}
+#header, #footer{
+		position:fixed;
+		height: 35px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+	
+	</style>
+</head>
+<body>
+<div id="header">Kezdőlap</div>
+<div id="footer">Footer</div>
+	<div id="fullpage">
+		<div class="section fp-auto-height-responsive" id="section0">
+			<div class="intro">
+				<h1>Section1</h1>
+			</div>
+		</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Section2 sliderrel</h1>
+			</div>
+		</div>
+<!--SLIDERHEZ OLDALAK-->
+	    <div class="slide" id="slide2">
+			<h1>Section2.1</h1>
+		</div>
+		<div class="slide" id="slide3">
+			<h1>Section2.2</h1>
+		</div>
+	</div>
+<!--SLIDERHEZ OLDALAK-->
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Section3</h1>
+		</div>	
+	</div>
+		<div class="section" id="section3">
+			<div class="intro">
+				<h1>Section4</h1>
+			</div>
+		</div>
+	</div>
+	
+
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['Bevezető', 'Második', 'Harmadik', 'Negyedik'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', 'black'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Bevezető', 'Érdekességek', 'Valami harmadik', 'valami negyedik'],
+        responsiveWidth: 900,
+        afterResponsive: function(isResponsive){
+        }
+	});
+</script>
+
+</body>
+</html>
